@@ -7,7 +7,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_home" tools:context=".HomeActivity">
+    tools:showIn="@layout/activity_home" tools:context=".HomeActivity"
+    android:background="@android:color/white">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -41,7 +42,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mood: satisfied"
+        android:text="Mood: satisfied "
         android:id="@+id/textView3"
         android:layout_below="@+id/textView2"
         android:layout_toRightOf="@+id/tom_myspace"
@@ -52,9 +53,134 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@drawable/emoji"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/mood"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3" />
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:orientation="vertical"
+        android:id="@+id/gridLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@drawable/my_profile"
+            android:layout_alignTop="@+id/gridLayout"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="My Profile"
+            android:id="@+id/textView4"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textSize="24dp"
+            android:paddingLeft="16dp"
+            android:layout_alignTop="@+id/gridLayout"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:src="@drawable/group_add"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend Requests"
+            android:id="@+id/textView5"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textSize="24dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:src="@drawable/mood"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend Status and Mood"
+            android:id="@+id/textView6"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:textSize="24dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView7"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:src="@drawable/updates"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend Updates"
+            android:id="@+id/textView7"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:textSize="24dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView8"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:src="@drawable/comment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:id="@+id/textView8"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:textSize="24dp"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"/>
+
+    </GridLayout>
 
 </RelativeLayout>
+
+
+
+
